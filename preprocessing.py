@@ -1,26 +1,4 @@
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.model_selection import KFold
-from sklearn.linear_model import LinearRegression
-from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import random
-from sklearn.model_selection import train_test_split, cross_val_score
-from sklearn import tree
-from sklearn import linear_model
-from sklearn.model_selection import KFold
-#from sklearn.cross_validation import StratifiedKFold
-from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor, AdaBoostRegressor
-from sklearn import metrics
-from sklearn.metrics import mean_absolute_error, mean_squared_error, median_absolute_error, explained_variance_score, r2_score
-from sklearn import preprocessing
-from sklearn.preprocessing import LabelEncoder, OneHotEncoder
-from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer, HashingVectorizer
-min_max_scaler = preprocessing.MinMaxScaler()
-path="https://raw.githubusercontent.com/sundeepblue/movie_rating_prediction/master/movie_metadata.csv"
+
 
 text_features = ['genre', 'plot_keywords', 'movie_title']
 catagory_features = ['country', 'content_rating', 'language']
