@@ -56,10 +56,3 @@ def empty_row_column_val_drop(data):
     data = data.reset_index(drop = True)
     return data
 
-def data_fillna(data): 
-    for x in catagory_features:
-        data[x] = data[x].fillna('None').astype('category')
-    for y in number_features:
-        data[y] = data[y].fillna(0.0).astype(np.float)
-    return data
-
